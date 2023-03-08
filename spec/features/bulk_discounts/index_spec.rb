@@ -53,5 +53,18 @@ RSpec.describe 'bulk items index' do
       expect(page).to have_content(@discount3.name)
     end
   end  
+
+  describe 'user story 9' do  
+    xit 'displays the name and date of the next 3 upcoming US holidays' do
+      three_holidays = HolidayService.name_and_date_next_three_holidays
+
+      within("#holidays") do
+        expect(page).to have_content("Upcoming Holidays")
+          three_holidays.each do |holiday|
+        expect(page).to have_content(holiday)
+        end
+      end  
+    end
+  end  
 end
 
