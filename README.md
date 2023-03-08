@@ -12,6 +12,10 @@ In week 5 of Mod 2 the final solo project assignment is a multiday solo project 
 * Write model tests that fully cover the data logic of the application.
 * Write feature tests that fully cover the functionality of the application.
 
+## About
+
+This project is an extension of the Little Esty Shop group project. I added functionality for merchants to create bulk discounts for their items. A “bulk discount” is a discount based on the quantity of items the customer is buying, for example “20% off orders of 10 or more items”.
+
 ## Built With
 
 Ruby v2.7.4 and Rails 5.2.8, RSpec 3.12 versions, PostgreSQL.
@@ -26,6 +30,6 @@ A key goal of this project is to utilize Test Driven Development for models and 
 <img width="1376" alt="little_esty_shop_discounts" src="https://user-images.githubusercontent.com/113124260/223608643-6356a4e8-c115-4a6e-a69b-44a771622168.png">
 
 
-## Author
+## Contributor
 
 [Elle Majors](https://github.com/Elle-M)
