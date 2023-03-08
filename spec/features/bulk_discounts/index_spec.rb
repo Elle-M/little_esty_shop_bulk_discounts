@@ -2,8 +2,6 @@ require 'rails_helper'
 
 RSpec.describe 'bulk items index' do
   before :each do
-    # @merchant = FactoryBot.create_list(:merchant, 3)
-    # @bulk_discount = FactoryBot.create_list(:bulk_discount, 4)
     @merchant1 = Merchant.create!(name: 'Hair Care')
     @merchant2 = Merchant.create!(name: 'Jewelry')
 
