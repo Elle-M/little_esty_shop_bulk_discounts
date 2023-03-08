@@ -23,16 +23,11 @@ describe 'bulk discount new' do
 
     it 'has a form when filled with valid data it redirects back to the bulk discount index' do 
       visit new_merchant_bulk_discount_path(@merchant1)
-      # Unable to find field "Discount" that is not disabled?
-      fill_in "Name", with: "Bargain Time"
-      # fill_in "Discount Amount", with: "75"
-      # fill_in "Quantity Threshold", with: "30"
+      
       click_button "Submit"
     
       expect(current_path).to eq(merchant_bulk_discounts_path(@merchant1))
       expect(page).to have_content("Bargain Time")
-      # expect(page).to have_content("75")
-      # expect(page).to have_content("30")
     end
   end  
 end 

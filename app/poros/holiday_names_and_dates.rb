@@ -1,4 +1,4 @@
-class RepoName 
+class HolidayNamesAndDate
   attr_reader :name
               :date
   
