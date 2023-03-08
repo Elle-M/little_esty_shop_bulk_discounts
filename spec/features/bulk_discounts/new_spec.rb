@@ -23,11 +23,17 @@ describe 'bulk discount new' do
 
     it 'has a form when filled with valid data it redirects back to the bulk discount index' do 
       visit new_merchant_bulk_discount_path(@merchant1)
-      
+      save_and_open_page
+
+      fill_in "bulk_discount[name]", with: 'Bargain Time'
+      fill_in "bulk_discount[percentage]", with: '20'
+      fill_in "bulk_discount[quantity_threshold]", with: '5'
       click_button "Submit"
     
       expect(current_path).to eq(merchant_bulk_discounts_path(@merchant1))
       expect(page).to have_content("Bargain Time")
+      expect(page).to have_content("20")
+      expect(page).to have_content("5")
     end
   end  
 end 
